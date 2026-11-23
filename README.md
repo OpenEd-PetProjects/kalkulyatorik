@@ -1,5 +1,11 @@
-# Pet project
+# Kalkulyatorik
 
-Record what you want to build and how you will know it works. Use the project brief in Loom to choose the first small task.
+`calculator.evaluate(expression)` evaluates decimal numbers, `+`, `-`, `*`, `/`, and parentheses using Python 3.10 or later. Invalid or unsupported expressions raise `ValueError`; division by zero raises `ZeroDivisionError`.
 
-Update the `test` recipe in `Justfile` to run your project tests. The initial `just test` fails until you add a test command. GitHub Actions runs the same recipe on pushes and pull requests.
+```python
+from calculator import evaluate
+
+assert evaluate("2 + 2 * 3") == 8
+```
+
+Run `just test` to run the same tests as GitHub Actions.
